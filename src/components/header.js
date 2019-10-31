@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         display: `flex`,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -29,6 +29,27 @@ const Header = ({ siteTitle }) => (
           Stockyard BBQ
         </Link>
       </h1>
+      <div 
+        style={{
+          display: `flex`,
+          justifyContent: 'space-between',
+        }}
+      >
+        <div
+          style={{
+            margin: `.5em`,
+          }}
+        >
+          Email
+        </div>
+        <div
+          style={{
+            margin: `.5em`,
+          }}
+        >
+          Phone number
+        </div>
+      </div>
     </div>
   </header>
 )
@@ -38,7 +59,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Stockyard BBQ`,
 }
 
 export default Header
